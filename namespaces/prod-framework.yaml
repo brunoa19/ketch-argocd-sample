@@ -1,0 +1,11 @@
+apiVersion: ketch.io/v1alpha1
+kind: Framework
+metadata:
+  name: prod-framework
+spec:
+  forProvider:
+    name: prod-framework
+    ingressController:
+      className: istio
+      serviceEndpoint: 35.230.16.206
+      type: istio

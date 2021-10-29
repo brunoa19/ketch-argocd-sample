@@ -1,0 +1,11 @@
+apiVersion: ketch.io/v1alpha1
+kind: App
+metadata:
+  name: podinfo-prod
+spec:
+  forProvider:
+    name: podinfo-prod
+    image: docker.io/shipasoftware/bulletinboard:1.0
+    framework: prod-framework
+    ports: [9898]
+    units: 2
